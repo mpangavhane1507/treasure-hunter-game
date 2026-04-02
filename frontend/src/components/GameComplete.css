@@ -1,0 +1,55 @@
+.game-complete {
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.completion-message {
+  margin-bottom: 30px;
+}
+
+.completion-message h1 {
+  font-size: 2.5rem;
+  color: #667eea;
+  margin-bottom: 15px;
+}
+
+.completion-message .player-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #764ba2;
+  margin-bottom: 10px;
+}
+
+.completion-message .score-message {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.completion-message .score {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.new-game-button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  margin-top: 30px;
+}
+
+.new-game-button:hover {
+  transform: translateY(-2px);
+}

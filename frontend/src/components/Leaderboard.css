@@ -1,0 +1,63 @@
+.leaderboard {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.leaderboard h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.leaderboard.loading,
+.leaderboard.empty {
+  text-align: center;
+  padding: 30px;
+  color: #666;
+}
+
+.leaderboard-table {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.leaderboard-header {
+  display: grid;
+  grid-template-columns: 60px 1fr 80px;
+  padding: 10px 15px;
+  font-weight: bold;
+  color: #666;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.leaderboard-row {
+  display: grid;
+  grid-template-columns: 60px 1fr 80px;
+  padding: 12px 15px;
+  background: white;
+  border-radius: 6px;
+  transition: transform 0.2s;
+}
+
+.leaderboard-row:hover {
+  transform: translateX(5px);
+}
+
+.rank-col {
+  font-weight: bold;
+  color: #667eea;
+}
+
+.name-col {
+  color: #333;
+}
+
+.score-col {
+  text-align: right;
+  font-weight: bold;
+  color: #4caf50;
+}

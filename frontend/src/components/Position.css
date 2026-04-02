@@ -1,0 +1,73 @@
+.position {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  user-select: none;
+}
+
+.position:hover:not(.revealed) {
+  border-color: #667eea;
+  transform: scale(1.05);
+}
+
+.position.selected {
+  background: #e3f2fd;
+  border-color: #2196f3;
+  border-width: 3px;
+}
+
+.position.revealed {
+  cursor: default;
+  border-width: 3px;
+}
+
+.position.revealed:hover {
+  transform: none;
+}
+
+.position.treasure {
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+  border-color: #ffa000;
+  font-size: 2rem;
+  animation: treasure-found 0.5s ease-out;
+}
+
+.position.proximity-3 {
+  background: #4caf50;
+  color: white;
+  border-color: #388e3c;
+}
+
+.position.proximity-2 {
+  background: #ff9800;
+  color: white;
+  border-color: #f57c00;
+}
+
+.position.proximity-1 {
+  background: #2196f3;
+  color: white;
+  border-color: #1976d2;
+}
+
+@keyframes treasure-found {
+  0% {
+    transform: scale(0.5) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+    opacity: 1;
+  }
+}
